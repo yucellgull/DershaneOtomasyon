@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dboDershaneOtomasyonModelStoreContainer" CdmEntityContainer="DbDershaneEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="dbo.DershaneOtomasyonModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_BRANSLAR">
+      <EntityTypeMapping TypeName="dbo.DershaneOtomasyonModel.TBL_BRANSLAR">
+        <MappingFragment StoreEntitySet="TBL_BRANSLAR">
+          <ScalarProperty Name="BRANSID" ColumnName="BRANSID" />
+          <ScalarProperty Name="BRANSAD" ColumnName="BRANSAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ILCELER">
+      <EntityTypeMapping TypeName="dbo.DershaneOtomasyonModel.TBL_ILCELER">
+        <MappingFragment StoreEntitySet="TBL_ILCELER">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ILLER">
+      <EntityTypeMapping TypeName="dbo.DershaneOtomasyonModel.TBL_ILLER">
+        <MappingFragment StoreEntitySet="TBL_ILLER">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_VELILER">
+      <EntityTypeMapping TypeName="dbo.DershaneOtomasyonModel.TBL_VELILER">
+        <MappingFragment StoreEntitySet="TBL_VELILER">
+          <ScalarProperty Name="VELISOYAD" ColumnName="VELISOYAD" />
+          <ScalarProperty Name="VELIID" ColumnName="VELIID" />
+          <ScalarProperty Name="VELIANNE" ColumnName="VELIANNE" />
+          <ScalarProperty Name="VELIBABA" ColumnName="VELIBABA" />
+          <ScalarProperty Name="VELITEL1" ColumnName="VELITEL1" />
+          <ScalarProperty Name="VELITEL2" ColumnName="VELITEL2" />
+          <ScalarProperty Name="VELIMAIL" ColumnName="VELIMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AyarlarOgretmenler" FunctionName="dbo.DershaneOtomasyonModel.Store.AyarlarOgretmenler">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbo.DershaneOtomasyonModel.AyarlarOgretmenler_Result">
+          <ScalarProperty Name="OGRTAYARLARID" ColumnName="OGRTAYARLARID" />
+          <ScalarProperty Name="OGRTADSOYAD" ColumnName="OGRTADSOYAD" />
+          <ScalarProperty Name="OGRTBRANS" ColumnName="OGRTBRANS" />
+          <ScalarProperty Name="OGRTTC" ColumnName="OGRTTC" />
+          <ScalarProperty Name="OGRTSIFRE" ColumnName="OGRTSIFRE" />
+          <ScalarProperty Name="OGRTFOTO" ColumnName="OGRTFOTO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="TBL_OGRENCILER">
+      <EntityTypeMapping TypeName="dbo.DershaneOtomasyonModel.TBL_OGRENCILER">
+        <MappingFragment StoreEntitySet="TBL_OGRENCILER">
+          <ScalarProperty Name="OGRFOTO" ColumnName="OGRFOTO" />
+          <ScalarProperty Name="OGRADRES" ColumnName="OGRADRES" />
+          <ScalarProperty Name="OGRILCE" ColumnName="OGRILCE" />
+          <ScalarProperty Name="OGRIL" ColumnName="OGRIL" />
+          <ScalarProperty Name="OGRTEL" ColumnName="OGRTEL" />
+          <ScalarProperty Name="OGRVELIID" ColumnName="OGRVELIID" />
+          <ScalarProperty Name="OGRCINSIYET" ColumnName="OGRCINSIYET" />
+          <ScalarProperty Name="OGRDOGTAR" ColumnName="OGRDOGTAR" />
+          <ScalarProperty Name="OGRBRANS" ColumnName="OGRBRANS" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRNO" ColumnName="OGRNO" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="OGRSOYAD" ColumnName="OGRSOYAD" />
+          <ScalarProperty Name="OGRAD" ColumnName="OGRAD" />
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Notlar" FunctionName="dbo.DershaneOtomasyonModel.Store.Notlar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbo.DershaneOtomasyonModel.Notlar_Result">
+          <ScalarProperty Name="NOTOGRTID" ColumnName="NOTOGRTID" />
+          <ScalarProperty Name="OGRADSOYAD" ColumnName="OGRADSOYAD" />
+          <ScalarProperty Name="OGRBRANS" ColumnName="OGRBRANS" />
+          <ScalarProperty Name="NOTTARIHI" ColumnName="NOTTARIHI" />
+          <ScalarProperty Name="NOTTYT" ColumnName="NOTTYT" />
+          <ScalarProperty Name="NOTAYTSAY" ColumnName="NOTAYTSAY" />
+          <ScalarProperty Name="NOTAYTSOZ" ColumnName="NOTAYTSOZ" />
+          <ScalarProperty Name="NOTAYTEA" ColumnName="NOTAYTEA" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRNO" ColumnName="OGRNO" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="OGRFOTO" ColumnName="OGRFOTO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="TBL_OGRETMENLER">
+      <EntityTypeMapping TypeName="dbo.DershaneOtomasyonModel.TBL_OGRETMENLER">
+        <MappingFragment StoreEntitySet="TBL_OGRETMENLER">
+          <ScalarProperty Name="OGRTFOTO" ColumnName="OGRTFOTO" />
+          <ScalarProperty Name="OGRTBRANS" ColumnName="OGRTBRANS" />
+          <ScalarProperty Name="OGRTADRES" ColumnName="OGRTADRES" />
+          <ScalarProperty Name="OGRTILCE" ColumnName="OGRTILCE" />
+          <ScalarProperty Name="OGRTIL" ColumnName="OGRTIL" />
+          <ScalarProperty Name="OGRTMAIL" ColumnName="OGRTMAIL" />
+          <ScalarProperty Name="OGRTTEL" ColumnName="OGRTTEL" />
+          <ScalarProperty Name="OGRTTC" ColumnName="OGRTTC" />
+          <ScalarProperty Name="OGRTSOYAD" ColumnName="OGRTSOYAD" />
+          <ScalarProperty Name="OGRTAD" ColumnName="OGRTAD" />
+          <ScalarProperty Name="OGRTID" ColumnName="OGRTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_OGRTAYARLAR">
+      <EntityTypeMapping TypeName="dbo.DershaneOtomasyonModel.TBL_OGRTAYARLAR">
+        <MappingFragment StoreEntitySet="TBL_OGRTAYARLAR">
+          <ScalarProperty Name="OGRTSIFRE" ColumnName="OGRTSIFRE" />
+          <ScalarProperty Name="OGRTAYARLARID" ColumnName="OGRTAYARLARID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_KASA">
+      <EntityTypeMapping TypeName="dbo.DershaneOtomasyonModel.TBL_KASA">
+        <MappingFragment StoreEntitySet="TBL_KASA">
+          <ScalarProperty Name="KASABILGI" ColumnName="KASABILGI" />
+          <ScalarProperty Name="KASAGIDER" ColumnName="KASAGIDER" />
+          <ScalarProperty Name="KASAGELIR" ColumnName="KASAGELIR" />
+          <ScalarProperty Name="KASATARIH" ColumnName="KASATARIH" />
+          <ScalarProperty Name="KASAOGRTID" ColumnName="KASAOGRTID" />
+          <ScalarProperty Name="KASAID" ColumnName="KASAID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_NOT">
+      <EntityTypeMapping TypeName="dbo.DershaneOtomasyonModel.TBL_NOT">
+        <MappingFragment StoreEntitySet="TBL_NOT">
+          <ScalarProperty Name="NOTAYTEA" ColumnName="NOTAYTEA" />
+          <ScalarProperty Name="NOTAYTSOZ" ColumnName="NOTAYTSOZ" />
+          <ScalarProperty Name="NOTAYTSAY" ColumnName="NOTAYTSAY" />
+          <ScalarProperty Name="NOTTYT" ColumnName="NOTTYT" />
+          <ScalarProperty Name="NOTTARIHI" ColumnName="NOTTARIHI" />
+          <ScalarProperty Name="NOTOGRID" ColumnName="NOTOGRID" />
+          <ScalarProperty Name="NOTOGRNO" ColumnName="NOTOGRNO" />
+          <ScalarProperty Name="NOTID" ColumnName="NOTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

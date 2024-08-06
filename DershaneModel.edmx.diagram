@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="970d1ce5cbbf4e94b06836f23d56709a" Name="Diagram1" ZoomLevel="96">
+        <EntityTypeShape EntityType="dbo.DershaneOtomasyonModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbo.DershaneOtomasyonModel.TBL_BRANSLAR" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbo.DershaneOtomasyonModel.TBL_ILCELER" Width="1.5" PointX="1.125" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbo.DershaneOtomasyonModel.TBL_ILLER" Width="1.5" PointX="3.375" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbo.DershaneOtomasyonModel.TBL_VELILER" Width="1.5" PointX="6.375" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbo.DershaneOtomasyonModel.TBL_OGRENCILER" Width="1.5" PointX="3" PointY="8.875" />
+        <AssociationConnector Association="dbo.DershaneOtomasyonModel.FK_TBL_OGRENCILER_TBL_VELILER" />
+        <EntityTypeShape EntityType="dbo.DershaneOtomasyonModel.TBL_OGRETMENLER" Width="1.5" PointX="0.875" PointY="3.625" />
+        <EntityTypeShape EntityType="dbo.DershaneOtomasyonModel.TBL_OGRTAYARLAR" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="dbo.DershaneOtomasyonModel.TBL_KASA" Width="1.5" PointX="3.125" PointY="19.125" />
+        <AssociationConnector Association="dbo.DershaneOtomasyonModel.FK_TBL_KASA_TBL_OGRETMENLER" />
+        <EntityTypeShape EntityType="dbo.DershaneOtomasyonModel.TBL_NOT" Width="1.5" PointX="5.25" PointY="9.625" />
+        <AssociationConnector Association="dbo.DershaneOtomasyonModel.FK_TBL_NOT_TBL_OGRENCILER" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
